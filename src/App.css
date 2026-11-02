@@ -65,6 +65,24 @@ main {
   letter-spacing: 0.14em;
 }
 
+.header-nav {
+ display: flex;
+ align-items: center;
+ gap: 28px;
+ margin-left: auto;
+}
+
+.header-nav a {
+ color: var(--ink);
+ font-size: 12px;
+ font-weight: 600;
+ text-decoration: none;
+}
+
+.header-nav a:hover {
+ color: var(--orange);
+}
+
 .main-nav a,
 .header-contact {
   color: var(--ink);
@@ -724,6 +742,10 @@ height: 280px;
     padding: 0 5%;
   }
 
+  .header-nav {
+    gap: 18px;
+  }
+
   .main-nav {
     gap: 19px;
     margin-right: 20px;
@@ -776,7 +798,23 @@ height: 280px;
   }
 
   .site-header {
-    height: 70px;
+    height: auto;
+    min-height: 70px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .header-nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    margin-left: 0;
+  }
+
+  .header-nav a {
+    font-size: 11px;
   }
 
   .wordmark-icon {

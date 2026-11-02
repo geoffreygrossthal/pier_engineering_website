@@ -39,9 +39,11 @@ function App() {
           </span>
         </a>
         <span className="header-specialty">ARIZONA GRADING &amp; DRAINAGE</span>
-        <a className="header-contact" href="mailto:ug@pierengineering.com?subject=Inquiry">
-          Email <span aria-hidden="true">↗</span>
-        </a>
+        <nav className="header-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
 
       <section
@@ -52,7 +54,7 @@ function App() {
       >
         <div className="photo-banner-overlay">
           <p className="photo-banner-kicker">Arizona Civil Engineering</p>
-          <h1>PIER ENGINEERING</h1>
+          <h1>PIER ENGINEERING, LLC</h1>
           <p className="photo-banner-services">
             Civil Site Design <span aria-hidden="true">•</span> Grading <span aria-hidden="true">•</span> Drainage <span aria-hidden="true"></span>
           </p>
@@ -76,17 +78,17 @@ function App() {
             dependable service from initial planning through project completion.
           </p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#contact">
+            <a className="button button-primary" href="mailto:ug@pierengineering.com?subject=Inquiry%20-%20Civil%20Site">
               Talk about your project <span aria-hidden="true">↗</span>
             </a>
             <a className="text-link" href="#services">
               What we do <span aria-hidden="true">↓</span>
             </a>
-            <a className="text-link" href="#services">
-              Contact <span aria-hidden="true">↓</span>
+            <a className="text-link" href="#about">
+              Leadership <span aria-hidden="true">↓</span>
             </a>
-            <a className="text-link" href="#services">
-              About <span aria-hidden="true">↓</span>
+            <a className="text-link" href="#contact">
+              Contact <span aria-hidden="true">↓</span>
             </a>
           </div>
         </div>
