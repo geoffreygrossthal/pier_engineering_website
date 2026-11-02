@@ -23,6 +23,23 @@ const services = [
   },
 ]
 
+function Arrow({ direction = 'up-right', className = '' }: { direction?: 'up-right' | 'down'; className?: string }) {
+  return (
+    <svg
+      className={`arrow-icon arrow-${direction} ${className}`}
+      viewBox="0 0 16 16"
+      fill="none"
+      aria-hidden="true"
+    >
+      {direction === 'down' ? (
+        <path d="M8 2v12m0 0-4-4m4 4 4-4" />
+      ) : (
+        <path d="M3 13 13 3m0 0H5m8 0v8" />
+      )}
+    </svg>
+  )
+}
+
 function App() {
   return (
     <main>
@@ -79,16 +96,16 @@ function App() {
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="mailto:ug@pierengineering.com?subject=Inquiry%20-%20Civil%20Site">
-              Talk about your project <span aria-hidden="true">↗</span>
+              Talk about your project <Arrow />
             </a>
             <a className="text-link" href="#services">
-              What we do <span aria-hidden="true">↓</span>
+              What we do <Arrow direction="down" />
             </a>
             <a className="text-link" href="#about">
-              Leadership <span aria-hidden="true">↓</span>
+              Leadership <Arrow direction="down" />
             </a>
             <a className="text-link" href="#contact">
-              Contact <span aria-hidden="true">↓</span>
+              Contact <Arrow direction="down" />
             </a>
           </div>
         </div>
@@ -154,7 +171,7 @@ function App() {
             {services.map((service) => (
               <article className="service-card" key={service.number}>
                 <span className="service-number">{service.number}</span>
-                <span className="service-arrow" aria-hidden="true">↗</span>
+                <span className="service-arrow"><Arrow /></span>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </article>
@@ -188,7 +205,7 @@ function App() {
               licensed Professional Engineer to every project.
             </p>
             <a className="text-link dark-link" href="#services">
-              Explore our services <span aria-hidden="true">↓</span>
+              Explore our services <Arrow direction="down" />
             </a>
           </div>
         </div>
