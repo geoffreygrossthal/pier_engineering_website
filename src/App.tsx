@@ -217,7 +217,7 @@ function App() {
           <h2>Have a site in mind?<br />Let’s talk.</h2>
         </div>
         <div className="callout-contact" aria-label="Contact Pier Engineering">
-          <a href="tel:+16027893360">602-789-3360</a>
+          <a href="tel:+14807893360">480-789-3360</a>
           <a href="mailto:ug@pierengineering.com">ug@pierengineering.com</a>
         </div>
         <span className="callout-mark" aria-hidden="true">PE.</span>
@@ -227,7 +227,7 @@ function App() {
         <a className="footer-brand" href="#home">PIER ENGINEERING</a>
         <span>Arizona Civil Engineering</span>
         <a href="mailto:ug@pierengineering.com">ug@pierengineering.com</a>
-        <a href="tel:+16027893360">602-789-3360</a>
+        <a href="tel:+14807893360">480-789-3360</a>
         <span>© {new Date().getFullYear()} Pier Engineering, LLC</span>
       </footer>
     </main>
